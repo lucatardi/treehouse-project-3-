@@ -1,4 +1,4 @@
-
+/*base styles*/
 * {
   box-sizing: border-box;
 }
@@ -51,6 +51,7 @@ form {
   text-align: left;
 }
 
+
 input[type="text"],
 input[type="email"],
 input[type="phone"],
@@ -71,17 +72,26 @@ input[type="zipcode"],{
 label {
   display: block;
   margin-bottom: 6px;
+  width:200px;
+  text-align: left;
 }
 input::placeholder {
   color: red;
   text-align: right;
 }
 
-#state {
-margin-top: : 6px;
-margin-bottom: 8px;
-}
+select {
+margin-bottom: 10px;
+height:26px;
 
+}
+input:focus,
+textarea:focus {
+  border-color:#000;
+}
+textarea {
+  height: 4em;
+}
 
 /*media query*/
 @media(min-width 768px){
