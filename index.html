@@ -42,7 +42,7 @@
 <div>
     <label for="state">State</label>
     <select id="state" name="user_state">
-      <option value="" disabled selected>Choose State</option>
+      <option value="" selected hidden disabled placeholder="choose state">Choose State</option>
       <option value="california">California</option>
       <option value="new_york">New York</option>
       <option value="las_vegas">Las Vegas</option>
@@ -59,21 +59,31 @@
 
 <fieldset id="newsletter" class="second_container">
   <legend>Newsletter</legend>
-  <p>Select the newsletter you would like to receive</p>
-
+  <p>Select the newsletters you would like to receive</p>
+<div>
+  <ul>
+    <li> HTML News</li>
+    <li> CSS News</li>
+    <li> Javascript News</li>
+  </ul>
+</div>
+  <legend>Newsletter Format</legend>
+  <div>
+    <ul>
+      <li>HTML</li>
+      <li>Plain text</li>
+    </ul>
+  </div>
+      <p>Other topics you would like to hear about</p>
 <textarea>
 </textarea>
 <div class="button">
   <button type="submit">Sign up</button>
 </div>
-
-
-
-
-
-
-
+</fieldset>
 </form>
-
+<footer>
+  <p> Copyright The Code Review</p>
+</footer>
   </body>
 </html>

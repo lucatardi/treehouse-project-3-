@@ -3,7 +3,9 @@
   box-sizing: border-box;
 }
 
-
+:root{
+  background-color: #e3eff4;
+}
 body {
   width:90%;
   margin: 0 auto;
@@ -34,7 +36,7 @@ legend {
 
 h3 {
   text-align: center;
-  color: lightgrey;
+  color: grey;
   border-bottom: 8px double black;
   padding-bottom: 20px;
 }
@@ -51,6 +53,12 @@ form {
   text-align: left;
 }
 
+label {
+  display: block;
+  margin-bottom: 6px;
+  width:200px;
+  text-align: left;
+}
 
 input[type="text"],
 input[type="email"],
@@ -60,7 +68,7 @@ input[type="city"],
 input[type="state"],
 input[type="zipcode"],{
   border:none;
-  background: lightgrey;
+  background-color: lightgrey;
   font-size: 16px;
   padding: 12px;
   margin-bottom: 20px;
@@ -69,12 +77,7 @@ input[type="zipcode"],{
   margin:0;
   width: 100%;
 }
-label {
-  display: block;
-  margin-bottom: 6px;
-  width:200px;
-  text-align: left;
-}
+
 input::placeholder {
   color: red;
   text-align: right;
@@ -90,19 +93,24 @@ textarea:focus {
   border-color:#000;
 }
 textarea {
-  height: 4em;
+  height: 5em;
+  width:100%;
 }
 
 /*media query*/
 @media(min-width 768px){
 
 form {
-  max-width: 680px;
+  max-width: 690px;
   width:100%;
   margin: 0 auto;
 }
 
-
+label,
+input {
+  display: flex;
+  flex-direction: row;
+}
 
 
 
@@ -110,3 +118,5 @@ form {
 
 
 }
+
+/*flexbox properties*/
