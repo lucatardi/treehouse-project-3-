@@ -4,7 +4,7 @@
 }
 
 :root{
-  background-color: #e3eff4;
+  background-color: lightskyblue;
 }
 body {
   width:90%;
@@ -28,6 +28,7 @@ h2 {
   font-size: 1.75em;
 }
 legend {
+  color: darkslategrey;
   text-align: left;
   font-weight: bold;
   font-size: 20px;
@@ -45,6 +46,8 @@ fieldset {
 }
 
 form {
+  font-family: "Oswald",sans-serif;
+  color: slategrey;
   max-width: 300px;
   margin: 10px auto;
   padding: 10px 20px;
@@ -96,6 +99,11 @@ textarea {
   height: 5em;
   width:100%;
 }
+footer {
+  text-align: center;
+  color: slategrey;
+  font-style: italic;
+}
 
 /*media query*/
 @media(min-width 768px){
@@ -118,5 +126,3 @@ input {
 
 
 }
-
-/*flexbox properties*/
