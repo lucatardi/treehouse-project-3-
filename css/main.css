@@ -105,6 +105,12 @@ footer {
   font-style: italic;
 }
 
+.button {
+  width:100%
+  height: 50px;
+  color:white;
+  background-color: darkturquoise;
+}
 /*media query*/
 @media(min-width 768px){
 

@@ -43,11 +43,22 @@
     <label for="state">State</label>
     <select id="state" name="user_state">
       <option value="" selected hidden disabled placeholder="choose state">Choose State</option>
+<optgroup label="west_coast">
       <option value="california">California</option>
+      <option value="oregon">Oregon</option>
+      <option value="washington">Washington</option>
+</optgroup>
+<optgroup label="midwest">
+    <option value="chicago">Chicago</option>
+    <option value="new_orelans">New Orleans</option>
+    <option value="texas">Texas</option>
+  </optgroup>
+  <optgroup label="east_coast">
+      <option value="massachusetts">Massachusetts</option>
       <option value="new_york">New York</option>
-      <option value="las_vegas">Las Vegas</option>
-      <option value="hawaii">Hawaii</option>
-      <option value="texas">Texas</option>
+      <option value="florida">Florida</option>
+    </optgroup>
+
     </select>
 </div>
 <div>
@@ -61,7 +72,7 @@
   <legend>Newsletter</legend>
   <p>Select the newsletters you would like to receive</p>
 <div>
-  <ul>
+  <label for="checkbox"
     <li> HTML News</li>
     <li> CSS News</li>
     <li> Javascript News</li>
@@ -69,15 +80,17 @@
 </div>
   <legend>Newsletter Format</legend>
   <div>
-    <ul>
+
       <li>HTML</li>
       <li>Plain text</li>
     </ul>
   </div>
-      <p>Other topics you would like to hear about</p>
-<textarea>
+
+<label for="topics"> Other topics you would like to hear about</label>
+<textarea id="topics" name="user_topics">
 </textarea>
 <div class="button">
+
   <button type="submit">Sign up</button>
 </div>
 </fieldset>
