@@ -58,39 +58,43 @@
       <option value="new_york">New York</option>
       <option value="florida">Florida</option>
     </optgroup>
-
     </select>
 </div>
 <div>
     <label for="zip">Zip Code</label>
     <input type="text" id="zip" name="user_zip">
 </div>
-
 </fieldset>
 
 <fieldset id="newsletter" class="second_container">
   <legend>Newsletter</legend>
   <p>Select the newsletters you would like to receive</p>
-<div>
-  <label for="checkbox"
-    <li> HTML News</li>
-    <li> CSS News</li>
-    <li> Javascript News</li>
-  </ul>
+<div class="news">
+  <label for="html">HTML News</label>
+  <input type="checkbox" id="html" value="html_type">
+</div>
+  <div class="news">
+    <label for="css">CSS News</label>
+    <input type="checkbox" id="css" value="css_type">
+</div>
+<div class="news">
+    <label for="javascript">Javascript News</label>
+    <input type="checkbox" id="javascript" name="javascript_type">
 </div>
   <legend>Newsletter Format</legend>
-  <div>
-
-      <li>HTML</li>
-      <li>Plain text</li>
-    </ul>
-  </div>
-
-<label for="topics"> Other topics you would like to hear about</label>
-<textarea id="topics" name="user_topics">
-</textarea>
+  <div class="format">
+      <label for="web">HTML</label>
+      <input type="checkbox" id="web" name="web_format">
+    </div>
+    <div class="format">
+      <label for="plain">Plain text</label>
+      <input type="checkbox" id="plain" name="plain_format">
+    </div>
+    <div>
+      <label for="topics"> Other topics you would like to hear about</label>
+      <textarea id="topics" name="user_topics"></textarea>
+</div>
 <div class="button">
-
   <button type="submit">Sign up</button>
 </div>
 </fieldset>
