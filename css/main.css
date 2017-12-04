@@ -75,6 +75,7 @@ form {
   }
 
 
+
 label {
   display: block;
   margin-bottom: 6px;
@@ -165,7 +166,7 @@ button {
 form {
   display: flex;
   flex-direction: column;
-  max-width: 100%
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -173,9 +174,24 @@ label,
 input {
   display: flex;
   flex-direction: row;
-  width:100%;
+  width:100px;
+  padding:6px;
+  margin: 8px;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="street_address"],
+input[type="city"],
+input[type="state"],
+input[type="zipcode"],
+textarea,
+select {
+  width:450px;
+  margin:10px;
+  padding:10px;
+}
 
 div.contact {
   display: flex;
@@ -186,13 +202,15 @@ div.contact {
 div.news {
 display: flex;
 flex-direction: row-reverse;
-width:50;
+width:25%;
+margin: 0;
 }
 
 div.format {
   display: flex;
   flex-direction: row-reverse;
-  width:50%;
+  width:25%;
+  margin: 0;
 }
 
 
