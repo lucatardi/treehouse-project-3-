@@ -138,12 +138,20 @@ select {
   display: flex;
   flex-direction: row;
 }
-
+div.news {
+  display: flex;
+  flex-direction: row-reverse;
+}
+div.format {
+  display: flex;
+  flex-direction: row-reverse;
+}
 textarea {
   height: 5em;
   width:100%;
   border-radius: 7px;
 }
+
 footer {
   text-align: center;
   color: slategrey;
@@ -172,8 +180,8 @@ form {
 
 label,
 input {
-  display: flex;
   flex-direction: row;
+  display: inline-block;
   width:100px;
   padding:6px;
   margin: 8px;
@@ -186,11 +194,14 @@ input[type="street_address"],
 input[type="city"],
 input[type="state"],
 input[type="zipcode"],
-textarea,
-select {
+textarea, select {
   width:450px;
   margin:10px;
   padding:10px;
+}
+
+#state {
+  width:450px;
 }
 
 div.contact {
@@ -204,6 +215,10 @@ display: flex;
 flex-direction: row-reverse;
 width:25%;
 margin: 0;
+}
+
+textarea {
+  width: 100%;
 }
 
 div.format {
