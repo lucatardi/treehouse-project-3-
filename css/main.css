@@ -7,7 +7,7 @@
   background-color: lightskyblue;
 }
 :target {
-  background: gainsboro;
+  background: lightsteelblue;
   counter-reset: pointer;
 }
 body {
@@ -224,7 +224,9 @@ div.contact {
   flex-direction: row;
   width:100%;
 }
-
+ h4 {
+   font-weight: bold;
+ }
 div.news {
 display: flex;
 flex-direction: row-reverse;
