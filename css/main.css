@@ -6,11 +6,17 @@
 :root{
   background-color: lightskyblue;
 }
+:target {
+  background: gainsboro;
+  counter-reset: pointer;
+}
 body {
   width:90%;
   margin: 0 auto;
 }
-
+a {
+  text-decoration: none;
+}
 h1 {
   text-transform: uppercase;
   color: white;
