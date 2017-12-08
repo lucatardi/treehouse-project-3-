@@ -61,26 +61,6 @@ form {
   background: #f3f7f8;
   text-align: left;
 }
-form {
-  > input[type="text"],
-  > input[type="email"],
-  > input [type="select"] {
-
-    &:valid {
-      background: lightyellow;
-      background-size: 20px;
-      background-repeat: no-repeat;
-      background-position: 20px 20px;
-
-      & + label {
-        opacity: 0;
-          }
-        }
-      }
-    }
-  }
-
-
 
 label {
   display: block;
@@ -94,7 +74,7 @@ input[type="email"],
 input[type="tel"],
 input[type="city"],
 input[type="state"],
-input[type="zipcode"],
+input[type="zipcode"]
 textarea,
 select {
   border:none;
@@ -108,6 +88,22 @@ select {
   width: 100%;
   border-radius: 7px;
 }
+#zip {
+  width:50%;
+}
+/*input[type="text"]:valid,
+input[type="email"]:valid,
+input [type="select"]:valid {
+   background: lightyellow;
+   background-size: 20px;
+   background-repeat: no-repeat;
+   background-position: 20px 20px;
+
+   & + label {
+     opacity: 0;
+       }
+*/
+
 
 #state {
   background-color: gainsboro;
@@ -217,7 +213,9 @@ textarea, select {
 #state {
   width:450px;
 }
-
+#zip {
+  width:225px;
+}
 div.contact {
   display: flex;
   flex-direction: row;
