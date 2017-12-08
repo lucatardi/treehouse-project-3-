@@ -91,19 +91,6 @@ select {
 #zip {
   width:50%;
 }
-/*input[type="text"]:valid,
-input[type="email"]:valid,
-input [type="select"]:valid {
-   background: lightyellow;
-   background-size: 20px;
-   background-repeat: no-repeat;
-   background-position: 20px 20px;
-
-   & + label {
-     opacity: 0;
-       }
-*/
-
 
 #state {
   background-color: gainsboro;
