@@ -91,7 +91,8 @@ select {
 #zip {
   display: flex;
   justify-content: flex-end;
-  flex-basis:50%;
+  /* flex-basis:50%; */
+  width: 40%;
 }
 
 #state {
@@ -172,68 +173,68 @@ button {
 /*media query*/
 @media(min-width: 768px) {
 
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  margin: 0 auto;
-}
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+  }
 
-label,
-input {
-  display: flex;
-  flex-direction: row;
-  display: inline-block;
-  width: 100px;
-}
+  label,
+  input {
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+    width: 100px;
+  }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="street_address"],
-input[type="city"],
-input[type="state"],
-input[type="zipcode"],
-textarea, select {
-  width:450px;
-  margin:5px;
-  padding:10px;
-}
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="street_address"],
+  input[type="city"],
+  input[type="state"],
+  input[type="zipcode"],
+  textarea, select {
+    width:450px;
+    margin:5px;
+    padding:10px;
+  }
 
-#state {
-  width:450px;
-}
-#zip {
-  flex-basis: 225px;
-  justify-content: flex-end;
-}
-div.contact {
-  display: flex;
-  flex-direction: row;
-  width:100%;
-}
- h4 {
-   font-weight: bold;
- }
-div.news {
-display: flex;
-flex-direction: row-reverse;
-flex-basis: 25%;
-margin: 0;
-justify-content: flex-end;
-}
-
-textarea {
-  width: 100%;
-}
-
-div.format {
+  #state {
+    width:450px;
+  }
+  #zip {
+    flex-basis: 225px;
+    justify-content: flex-end;
+  }
+  div.contact {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+  }
+   h4 {
+     font-weight: bold;
+   }
+  div.news {
   display: flex;
   flex-direction: row-reverse;
-  flex-basis:25%;
+  flex-basis: 25%;
   margin: 0;
   justify-content: flex-end;
-}
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  div.format {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-basis:25%;
+    margin: 0;
+    justify-content: flex-end;
+  }
 
 
 }
