@@ -101,7 +101,7 @@ select {
   font-size: .9em;
 }
 input::placeholder {
-  color: red;
+  color: lightslategrey;
   text-align: right;
 }
 
@@ -184,7 +184,7 @@ input {
   display: flex;
   flex-direction: row;
   display: inline-block;
-  width: :100px;
+  width: 100px;
 }
 
 input[type="text"],
