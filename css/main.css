@@ -89,7 +89,9 @@ select {
   border-radius: 7px;
 }
 #zip {
-  width:50%;
+  display: flex;
+  justify-content: flex-end;
+  flex-basis:50%;
 }
 
 #state {
@@ -179,9 +181,10 @@ form {
 
 label,
 input {
+  display: flex;
   flex-direction: row;
   display: inline-block;
-  width:100px;
+  width: :100px;
 }
 
 input[type="text"],
@@ -193,7 +196,7 @@ input[type="state"],
 input[type="zipcode"],
 textarea, select {
   width:450px;
-  margin:10px;
+  margin:5px;
   padding:10px;
 }
 
@@ -201,7 +204,8 @@ textarea, select {
   width:450px;
 }
 #zip {
-  width:225px;
+  flex-basis: 225px;
+  justify-content: flex-end;
 }
 div.contact {
   display: flex;
